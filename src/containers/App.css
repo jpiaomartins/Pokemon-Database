@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.searchArea {
+  background: linear-gradient(to left, var(--main-bg-color) 0%, var(--second-bg-color) 100%);
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+.searchArea h1 {
+  margin: 0;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: x-large;
+}
