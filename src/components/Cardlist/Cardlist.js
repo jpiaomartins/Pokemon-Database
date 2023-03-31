@@ -2,21 +2,7 @@ import React from 'react';
 import Card from '../Card/Card';
 import './Cardlist.css';
 
-const Cardlist = ({pokemonList}) => {
-    let teste = [
-        {
-            name: 'Bulba',
-            number: '1',
-        },
-        {
-            name: 'Ivisaur',
-            number: '2',
-        },
-        {
-            name: 'Venosaur',
-            number: '3',
-        },
-    ]
+const Cardlist = ({pokemonList, activePokemon, onClickFunction, pokemonData}) => {
     return (
         <div className='pokelist'>
             {
@@ -25,7 +11,10 @@ const Cardlist = ({pokemonList}) => {
                         <Card   
                             key={i}
                             name={pokemon.name} 
-                            number={i} />
+                            number={i}
+                            activePokemon={activePokemon}
+                            onClickFunction={onClickFunction}
+                            pokemonData={pokemonData} />
                     );
                 })
             }

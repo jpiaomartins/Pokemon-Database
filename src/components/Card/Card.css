@@ -1,19 +1,16 @@
-:root {
-    --main-bg-color: rgba(58, 94, 169, 1);
-    --second-bg-color: rgba(255, 203, 5, 1);
-}
-
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     color: whitesmoke;
     font-weight: bold;
     margin: 0px;
+    pointer-events: none;
 }
 
 p {
     margin: 0px;
     color: whitesmoke;
+    pointer-events: none;
 }
 
 .card {
@@ -21,8 +18,8 @@ p {
     border-radius: 8px;
     text-align: center;
     padding: 5px;
-    margin: 10px 5px;
     transition: background-color 0.3s ease;
+    place-self: center;
 }
 
 .card:hover {
@@ -32,9 +29,13 @@ p {
 .compact {
     background: var(--main-bg-color);
     width: 180px;
+    height: 50px;
 }
 
 .expand {
     background: var(--second-bg-color);
-    width: 180px;
+    width: 370px;
+    height: 330px;
+    grid-column: span 2;
+    grid-row: span 5;
 }
